@@ -14,9 +14,9 @@ public class Database {
         HashMap<String, String> map = new HashMap<String, String>();
  
         try {
-            String dbURL = "jdbc:sqlserver://KCMCLPRDDB1V.jdadelivers.com:1433; databaseName = MCL_CKB_PRD";
-            String user = "MCL_PRD_CKB";
-            String pass = "P@ssword2807";
+            String dbURL = "jdbc:sqlserver://<server_name>:1433; databaseName = <DB name>";
+            String user = "user_name";
+            String pass = "user_password";
 //            String connectionUrl = "jdbc:sqlserver://<server>:<port>;databaseName=AdventureWorks;user=<user>;password=<password>";
             conn = DriverManager.getConnection(dbURL, user, pass);
             if (conn != null) {
